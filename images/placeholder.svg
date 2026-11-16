@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#1a1a2e" rx="8"/>
+  <text x="400" y="190" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="18">
+    Paper figure or diagram
+  </text>
+  <text x="400" y="220" text-anchor="middle" fill="#475569" font-family="monospace" font-size="14">
+    (replace with actual image)
+  </text>
+</svg>

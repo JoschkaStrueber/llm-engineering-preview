@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 8 410 352" width="410" height="352">
+
+  <!-- ─── Marker Definitions ─── -->
+  <defs>
+    <marker id="arrow-ink" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1f2937" />
+    </marker>
+    <marker id="arrow-cyan" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0e7490" />
+    </marker>
+  </defs>
+
+  <!--
+    Equilateral triangle geometry:
+      Center: (250, 215)
+      Circumradius: 160px, Node radius: 40px
+      Build:   (250, 55): top center
+      Learn:   (111, 295): bottom left
+      Measure: (389, 295): bottom right
+  -->
+
+  <!-- ─── Scale-Up Arc (behind everything) ─── -->
+  <!-- Cubic Bezier from Learn's upper-left edge to Build's left edge,
+       swinging wide to the left of the triangle via control points at x≈0 -->
+  <path
+    d="M 82 263 C 25 225, 25 90, 213 60"
+    fill="none"
+    stroke="#0e7490"
+    stroke-width="2"
+    stroke-dasharray="8 5"
+    marker-end="url(#arrow-cyan)"
+  />
+  <!-- Scale-up label, upper-left area near the arc -->
+  <text x="88" y="118" font-family="sans-serif" font-size="11" fill="#0e7490" text-anchor="start">
+    <tspan x="103" dy="0">Rule passes?</tspan>
+    <tspan x="91" dy="14">--> Scale up</tspan>
+  </text>
+
+  <!-- ─── Clockwise Arrows ─── -->
+
+  <!-- Build (250,55) → Measure (389,295), bows right -->
+  <path
+    d="M 270 90 Q 355 155 369 260"
+    fill="none"
+    stroke="#1f2937"
+    stroke-width="2"
+    marker-end="url(#arrow-ink)"
+  />
+
+  <!-- Measure (389,295) → Learn (111,295), bows down -->
+  <path
+    d="M 349 295 Q 250 340 151 295"
+    fill="none"
+    stroke="#1f2937"
+    stroke-width="2"
+    marker-end="url(#arrow-ink)"
+  />
+
+  <!-- Learn (111,295) → Build (250,55), bows left -->
+  <path
+    d="M 131 260 Q 145 155 230 90"
+    fill="none"
+    stroke="#1f2937"
+    stroke-width="2"
+    marker-end="url(#arrow-ink)"
+  />
+
+  <!-- ─── Annotations (close to their arrows) ─── -->
+
+  <!-- Build→Measure: right side of arrow -->
+  <text x="362" y="152" font-family="sans-serif" font-size="11" fill="#4b5563" text-anchor="start">
+    <tspan x="362" dy="0">Train a</tspan>
+    <tspan x="362" dy="14">small model</tspan>
+  </text>
+
+  <!-- Measure→Learn: below arrow -->
+  <text x="250" y="350" font-family="sans-serif" font-size="11" fill="#4b5563" text-anchor="middle">Evaluate against the baseline</text>
+
+  <!-- Learn→Build: to the LEFT of the arrow path (arrow is at x≈146 here) -->
+  <text x="132" y="185" font-family="sans-serif" font-size="11" fill="#4b5563" text-anchor="end">
+    <tspan x="132" dy="0">Integrate</tspan>
+    <tspan x="132" dy="14">what worked</tspan>
+  </text>
+
+  <!-- ─── Node Circles (on top of arrows) ─── -->
+  <circle cx="250" cy="55" r="40" fill="#f3f4f6" stroke="#047857" stroke-width="2.5" />
+  <circle cx="389" cy="295" r="40" fill="#f3f4f6" stroke="#b45309" stroke-width="2.5" />
+  <circle cx="111" cy="295" r="40" fill="#f3f4f6" stroke="#6d28d9" stroke-width="2.5" />
+
+  <!-- ─── Node Labels ─── -->
+  <text x="250" y="55" dy="0.35em" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">Build</text>
+  <text x="389" y="295" dy="0.35em" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">Measure</text>
+  <text x="111" y="295" dy="0.35em" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">Learn</text>
+
+</svg>

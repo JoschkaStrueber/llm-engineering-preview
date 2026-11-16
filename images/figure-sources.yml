@@ -1,0 +1,91 @@
+# Internal figure-provenance ledger. Add an entry atomically with each new figure.
+# Required fields: id, lecture, source_url, source_figure, treatment,
+# public_caption, redistribution.
+# Example treatment values describe whether the visual is a redraw, adaptation,
+# or source asset; public_caption is the student-facing attribution.
+- id: week-04-flashattention-figure-2
+  lecture: week-04
+  source_url: https://arxiv.org/abs/2205.14135
+  source_figure: "Figure 2: attention forward pass at sequence length 4,096"
+  treatment: "Course-authored semantic-bar redraw of the reported Standard and FlashAttention values; no source image is embedded."
+  public_caption: "Adapted from Dao et al. (2022), Figure 2; attention forward pass on sequence length 4096."
+  redistribution: "No third-party figure asset is redistributed; the course redraw presents reported values with attribution."
+
+- id: week-04-streamingllm-figure-3-evidence
+  lecture: week-04
+  source_url: https://arxiv.org/abs/2309.17453
+  source_figure: "Figure 3: streaming perplexity comparison after the cache boundary"
+  treatment: "Course-authored qualitative SVG redraw of the reported rolling-window and retained-sink trend; source points are not digitized."
+  public_caption: "Qualitative redraw of Xiao et al. (2024), Figure 3; the axis shows a relative perplexity trend, not digitized values."
+  redistribution: "No third-party figure asset or digitized source data is redistributed; the course redraw retains only the qualitative separation."
+
+- id: week-04-streamingllm-figure-1d-method
+  lecture: week-04
+  source_url: https://arxiv.org/abs/2309.17453
+  source_figure: "Figure 1(d): StreamingLLM cache layout"
+  treatment: "Course-authored token-strip method redraw showing retained initial positions, an evicted middle span, and recent context."
+  public_caption: "The retained cache contains initial sink positions plus the recent window; the dashed middle is evicted, following StreamingLLM Figure 1(d)."
+  redistribution: "No third-party figure asset is redistributed; the course-authored method redraw is attributed to the source figure."
+
+- id: week-04-deepseek-v32-figure-2-dsa
+  lecture: week-04
+  source_url: https://arxiv.org/abs/2512.02556
+  source_figure: "Figure 2 and Section 2.1: DeepSeek Sparse Attention under MLA/MQA"
+  treatment: "Course-authored semantic SVG adaptation; token IDs and score heights are illustrative rather than reported measurements."
+  public_caption: "Adapted from DeepSeek-AI (2025), Figure 2. Course-authored illustrative selection, not reported data."
+  redistribution: "No third-party figure asset or reported plot data is redistributed; the course adaptation is attributed and labels its illustrative content."
+
+- id: week-05-modded-nanogpt-track-3-adamw-muon
+  lecture: week-05
+  source_url: https://github.com/KellerJordan/modded-nanogpt/tree/master/records/track_3_optimization/results
+  source_figure: "Derived from the AdamW and Muon track-3 record logs; this source provides logs, not a published figure"
+  treatment: "Course-authored line plot from deterministic extraction of checkpoint-validation log rows; the Muon series averages repeated checkpoint rows."
+  public_caption: "Keller Jordan's modded-nanoGPT track-3: validation loss versus wall-clock time."
+  redistribution: "No source figure asset is redistributed; the course plot presents derived summary values from the public record logs with attribution."
+
+- id: week-07-nanochat-miniseries-scaling-optima
+  lecture: week-07
+  source_url: https://github.com/karpathy/nanochat/discussions/420
+  source_figure: "Reported quadratic-fit optima table following the fixed-FLOP IsoFLOP sweeps"
+  treatment: "Course-authored compact SVG plot from the three reported fitted optima; no source image is embedded."
+  public_caption: "Karpathy's nanochat miniseries v1 fitted optima; validation BPB versus fixed-FLOP budget."
+  redistribution: "No third-party figure asset is redistributed; the course plot presents the reported values with source attribution and a recipe-specific caveat."
+
+- id: week-08-dolma3-figure-8-curation-flow
+  lecture: week-08
+  source_url: https://arxiv.org/abs/2512.13961
+  source_figure: "Figure 8: Data curation flow for pretraining data sources in Dolma 3 Mix"
+  treatment: "Course-authored flex/grid lane redraw of the source-family front ends, their convergence on one shared mixing stage, and the quality-upsampling path; no source image is embedded and no reported value is presented."
+  public_caption: "Adapted from OLMo 3 (2025), Figure 8; each source family runs its own front end before a shared mixing stage."
+  redistribution: "No third-party figure asset is redistributed; the course-authored redraw presents only the pipeline structure, with attribution."
+
+- id: week-08-olmix-figure-1-development-loop
+  lecture: week-08
+  source_url: https://arxiv.org/abs/2602.12237
+  source_figure: "Figure 1: the two data-mixing problems, configuring the method and mixing under an evolving domain set"
+  treatment: "Course-authored two-phase method redraw sharing one stage spine; the configure phase poses the method-configuration question and the evolve phase shows Add, Revise, Remove and Partition recomputing the mixture from P_0 to P_final. No source image is embedded and no measured outcome is presented."
+  public_caption: "Adapted from Chen et al. (2026), Figure 1; domain-set updates during development force the mixture to be recomputed."
+  redistribution: "No third-party figure asset is redistributed; the course-authored redraw presents only the problem structure, with attribution to the ICML 2026 paper."
+
+- id: week-08-olmix-figure-2-offline-schema
+  lecture: week-08
+  source_url: https://arxiv.org/abs/2602.12237
+  source_figure: "Figure 2: the three-step offline mixing schema, swarm then regression then optimization"
+  treatment: "Course-authored three-panel method redraw; the predicted-versus-true scatter is a schematic shape with unlabelled axes rather than digitized source data, and no reported value or surrogate coefficient is presented."
+  public_caption: "Adapted from Chen et al. (2026), Figure 2; proxy swarm, per-task surrogate, then optimization over the feasible set."
+  redistribution: "No third-party figure asset or digitized source data is redistributed; the course-authored redraw retains only the three-step method structure, with attribution to the ICML 2026 paper."
+
+- id: week-08-olmo3-figure-10-quality-upsampling
+  lecture: week-08
+  source_url: https://arxiv.org/abs/2512.13961
+  source_figure: "Figure 10: quality-aware upsampling, repetition factor against quality percentile"
+  treatment: "Course-authored qualitative SVG curve redraw; the repetition counts are chosen for teaching and are not digitized from the source figure. The Study-mode caption states that the curve is illustrative, that the bottom 40% and the 7x cap are the report's example, and that the values in between are chosen for teaching."
+  public_caption: "Illustrative redraw of OLMo 3 (2025), Figure 10; repetition rises with quality percentile, with the bottom 40% discarded and the top 5% repeated 7 times in the report's example. The 7x cap applies in general, but the curves are topic-specific, and the values in between are chosen for teaching."
+  redistribution: "No third-party figure asset or digitized source data is redistributed; the course-authored redraw retains only the qualitative shape and its two boundaries, with attribution."
+- id: week-01-hadsell-photo
+  lecture: week-01
+  source_url: https://www.ted.com/talks/raia_hadsell_the_ai_breakthroughs_we_ve_overlooked_and_how_they_re_transforming_science
+  source_figure: "Talk image RaiaHadsell_2024S-embed.jpg (pi.tedcdn.com), TEDAI Vienna, October 2024; the talk page names no photographer"
+  treatment: "Cropped to a portrait around the speaker (x 640 to 1560 of 2880, full height) and resized to 900 px wide, JPEG quality 82."
+  public_caption: "Not published. The lecture build credits it on the slide as 'Photo: TED, TEDAI Vienna 2024'."
+  redistribution: "Not redistributed. TED's usage policy: 'At this time we do not license speaker photos or TED images outside of formal licensing partnerships and press requests.' Shown only in the lecture hall from the lecture build (src/lectureOnly/, npm run present) under §60a UrhG, with the source named as §63 UrhG requires. Every other build replaces the photo map with its stub (design D3)."

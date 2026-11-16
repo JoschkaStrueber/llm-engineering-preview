@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/llm-engineering-preview/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLM Engineering</title>
+    <script>
+      // Sets the colour theme before first paint, in the order of
+      // resolveInitialColorTheme (src/layout/colorTheme.ts): ?theme=, then the
+      // stored choice, then the OS. src/themeScript.test.ts keeps them in step.
+      (function () {
+        var key = "llm-engineering-theme";
+        var valid = function (value) {
+          return value === "light" || value === "dark" ? value : null;
+        };
+        var theme = valid(new URLSearchParams(window.location.search).get("theme"));
+        if (!theme) {
+          try {
+            theme = valid(window.localStorage.getItem(key));
+          } catch (error) {
+            theme = null;
+          }
+        }
+        if (!theme) {
+          theme =
+            window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+        }
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <script type="module" crossorigin src="/llm-engineering-preview/assets/index-BOf0MDJp.js"></script>
+    <link rel="stylesheet" crossorigin href="/llm-engineering-preview/assets/index-C2VlPDbh.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
