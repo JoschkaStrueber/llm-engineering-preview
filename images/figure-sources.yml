@@ -51,32 +51,32 @@
   public_caption: "Karpathy's nanochat miniseries v1 fitted optima; validation BPB versus fixed-FLOP budget."
   redistribution: "No third-party figure asset is redistributed; the course plot presents the reported values with source attribution and a recipe-specific caveat."
 
-- id: week-08-dolma3-figure-8-curation-flow
-  lecture: week-08
+- id: week-09-dolma3-figure-8-curation-flow
+  lecture: week-09
   source_url: https://arxiv.org/abs/2512.13961
   source_figure: "Figure 8: Data curation flow for pretraining data sources in Dolma 3 Mix"
   treatment: "Course-authored flex/grid lane redraw of the source-family front ends, their convergence on one shared mixing stage, and the quality-upsampling path; no source image is embedded and no reported value is presented."
   public_caption: "Adapted from OLMo 3 (2025), Figure 8; each source family runs its own front end before a shared mixing stage."
   redistribution: "No third-party figure asset is redistributed; the course-authored redraw presents only the pipeline structure, with attribution."
 
-- id: week-08-olmix-figure-1-development-loop
-  lecture: week-08
+- id: week-09-olmix-figure-1-development-loop
+  lecture: week-09
   source_url: https://arxiv.org/abs/2602.12237
   source_figure: "Figure 1: the two data-mixing problems, configuring the method and mixing under an evolving domain set"
   treatment: "Course-authored two-phase method redraw sharing one stage spine; the configure phase poses the method-configuration question and the evolve phase shows Add, Revise, Remove and Partition recomputing the mixture from P_0 to P_final. No source image is embedded and no measured outcome is presented."
   public_caption: "Adapted from Chen et al. (2026), Figure 1; domain-set updates during development force the mixture to be recomputed."
   redistribution: "No third-party figure asset is redistributed; the course-authored redraw presents only the problem structure, with attribution to the ICML 2026 paper."
 
-- id: week-08-olmix-figure-2-offline-schema
-  lecture: week-08
+- id: week-09-olmix-figure-2-offline-schema
+  lecture: week-09
   source_url: https://arxiv.org/abs/2602.12237
   source_figure: "Figure 2: the three-step offline mixing schema, swarm then regression then optimization"
   treatment: "Course-authored three-panel method redraw; the predicted-versus-true scatter is a schematic shape with unlabelled axes rather than digitized source data, and no reported value or surrogate coefficient is presented."
   public_caption: "Adapted from Chen et al. (2026), Figure 2; proxy swarm, per-task surrogate, then optimization over the feasible set."
   redistribution: "No third-party figure asset or digitized source data is redistributed; the course-authored redraw retains only the three-step method structure, with attribution to the ICML 2026 paper."
 
-- id: week-08-olmo3-figure-10-quality-upsampling
-  lecture: week-08
+- id: week-09-olmo3-figure-10-quality-upsampling
+  lecture: week-09
   source_url: https://arxiv.org/abs/2512.13961
   source_figure: "Figure 10: quality-aware upsampling, repetition factor against quality percentile"
   treatment: "Course-authored qualitative SVG curve redraw; the repetition counts are chosen for teaching and are not digitized from the source figure. The Study-mode caption states that the curve is illustrative, that the bottom 40% and the 7x cap are the report's example, and that the values in between are chosen for teaching."
