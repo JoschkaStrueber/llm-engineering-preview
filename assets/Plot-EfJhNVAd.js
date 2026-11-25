@@ -1,1 +1,0 @@
-import{j as s}from"./index-BiCV0qgR.js";function i({src:e,alt:r,caption:t}){return s.jsxs("figure",{className:"my-8",children:[s.jsx("div",{className:"rounded-lg border border-gray-700 bg-white p-3",children:s.jsx("img",{src:e,alt:r,className:"h-auto w-full"})}),s.jsx("figcaption",{className:"mt-2 text-sm text-gray-400",children:t})]})}export{i as P};
