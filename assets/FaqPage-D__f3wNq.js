@@ -1,4 +1,4 @@
-import{j as e}from"./index-DE8OrShc.js";import{P as i,h as s}from"./ProsePage-B2CELAHP.js";function o(n){const t={a:"a",em:"em",h2:"h2",h3:"h3",li:"li",ol:"ol",p:"p",...n.components};return e.jsxs(e.Fragment,{children:[`
+import{j as e}from"./index-CayhWHgT.js";import{P as i,h as s}from"./ProsePage-BUUSqP-a.js";function o(n){const t={a:"a",em:"em",h2:"h2",h3:"h3",li:"li",ol:"ol",p:"p",...n.components};return e.jsxs(e.Fragment,{children:[`
 `,e.jsx(t.h2,{children:"Participation"}),`
 `,e.jsx(t.h3,{children:"Why are the spots in the lecture limited?"}),`
 `,e.jsx(t.p,{children:'This lecture is a voluntary passion project of mine, which I teach instead of working on my own projects. I think we in Tübingen should do a better job of teaching the latest research and best practices in such a fast-moving field. I designed the lecture and exercises by asking myself: "What kind of lecture would I have liked to take before starting my PhD?"'}),`
